@@ -27,13 +27,14 @@ function upDataAmount(currentAmountId, enteredAmountNumber) {
     document.getElementById(currentAmountId).innerText = total;
 }
 
+// deposit button event handler
 const withdrawBtn = document.getElementById('withdraw-btn');
 withdrawBtn.addEventListener('click', function(){
     const withdrawAmount = document.getElementById('withdraw-amount').value;
     const withdrawAmountNumber = parseFloat(withdrawAmount);
-    
-    upDataAmount("current-withdraw", withdrawAmountNumber);
-    upDataAmount("current-balance", (-1*withdrawAmountNumber));
+
+    upDataAmount("current-withdraw", withdrawAmountNumber); // calling function for update withdraw section
+    upDataAmount("current-balance", (-1*withdrawAmountNumber)); // calling function for subtracting withdraw money from current balance and update it
 
     document.getElementById('withdraw-amount').value = "";
 })
