@@ -1,0 +1,12 @@
+body{
+    padding: 50px;
+}
+.submit-area{
+    margin-top: 20px;
+    padding: 40px;
+    box-shadow: 5px 5px 10px goldenrod;
+    border-radius: 10px; 
+}
+.transaction-area{
+    display: none;
+}
