@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="login-div" class="login-area">
+    <div id="login-area">
         <h1 class=" text-center">Welcome to Pioneer Bank</h1>
         <div class="submit-area">
             <h4>Login</h4>
@@ -20,20 +20,57 @@
             <button id="login-btn" class="btn btn-warning">Enter</button>
         </div>
     </div>
-    <div class="transaction-area">
-        <h4>this transaction area</h4>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h4>Deposit</h4>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h4>Withdraw</h4>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h4>Balance</h4>
+                    <h2>$1240</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h2>Deposit</h2>
+                    <input class="form-control" type="text" placeholder="$ your amount to deposit"> <br>
+                    <button class="btn btn-warning">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h2>Withdraw</h2>
+                    <input class="form-control" type="text" placeholder="$ your amount to withdraw"> <br>
+                    <button class="btn btn-warning"> withdraw</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script>
-        var loginBtn = document.getElementById('login-btn');
-        loginBtn.addEventListener('click', function(){
-            const loginArea = document.getElementById('login-div');
+    <script src="script.js"></script>
+    <!-- <script>
+        const loginBtn = document.getElementById('login-btn');
+        loginBtn.addEventListener('click', function () {
+            const loginArea = document.getElementById('login-area');
             loginArea.style.display = "none";
 
-            // const transactionArea = document.getElementById('transaction-area');
-            // transactionArea.style.display = "block";
+            const transactionArea = document.getElementById('transaction-area');
+            transactionArea.style.display = "block";
         })
-    </script>
+
+    </script> -->
 </body>
 
 </html>
